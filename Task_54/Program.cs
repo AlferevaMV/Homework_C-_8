@@ -16,7 +16,7 @@ int Prompt(string massege)
 }
 
 
-int[,] CreaateArray(int m = 5, int n = 7)
+int[,] MyArray(int m = 4, int n = 3)
 {
     int[,] array = new int[m, n];
     return array;
@@ -29,7 +29,7 @@ void PrintArr(int[,] array)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            System.Console.Write($"{array[i, j],4}  ");
+            System.Console.Write($"{array[i, j],3}  ");
         }
         System.Console.WriteLine();
     }
@@ -69,7 +69,7 @@ int[,] SortRows(int[,] arr)
 
 void Main()
 {
-    int[,] arr = CreaateArray();
+    int[,] arr = MyArray();
     arr = FillArrayRandom(arr);
     PrintArr(arr);
     System.Console.WriteLine("\nsort: ");
